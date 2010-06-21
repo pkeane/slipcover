@@ -1,0 +1,168 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,
+p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,
+dfn,font,img,ins,kbd,q,s,samp,small,strike,sub,
+sup,tt,var,fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td, ul,li {
+	background:transparent;
+	border:0;
+	font-family:inherit;
+	font-size:100%;
+	font-style:inherit;
+	font-weight:inherit;
+	list-style: none;
+	margin:0;
+	outline:0;
+	padding:0;
+	vertical-align:baseline;
+}
+
+html {
+	height:100%;
+	margin:0 0 1px;
+}
+
+body {
+	background:#fff;
+	color:#1e242e;
+	font-family: Georgia, Times, Times New Roman, serif;
+	font-size:small;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 20px;
+}
+
+h1.title {
+	margin-bottom: 12px;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 18px;
+	margin: 6px 0;
+}
+
+h3 {
+	font-weight: normal;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+h4#login {
+	float: right;
+	font-size: .8em;
+	color: #eee;
+	margin-top: 5px;
+	margin-right: 12px;
+}
+
+h5 {
+	font-size: .9em;
+	font-weight: bold;
+}
+
+a {
+	color: #584013;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #84601d;
+}
+
+#wordMark {
+	background:url("../images/wordMarkBkg.png") repeat-x scroll center bottom #FFFFFF;
+	padding-top:7px;
+}
+
+#universityWordMark  img {
+	margin-bottom: -3px;
+}
+
+.spacer { clear:both; }
+.hide { display:none; }
+.pagedata { display:none; }
+a.delete { color:#c00; }
+.alert { color:#c00; }
+.msg { color:#c00; }
+a.edit { color: #00c; }
+.current { color: #00c; font-weight: bold;}
+a.current { color: #00c; font-weight: bold;}
+.modify {color: #00c;}
+a.modify {color: #00c; font-size: .8em;}
+
+div#topper {
+	/*
+	border-bottom: 1px solid #554b44;
+	*/
+	background-color: #cfd5df;
+	margin: 0;
+	margin-top: -5px;
+	padding: 18px 12px 4px 50px;
+}
+
+div#topper h1 {
+	font-size: 24px;
+	float: left;
+}
+
+div#topper h3 {
+	font-weight: normal;
+	float: right;
+	margin-top: 8px;
+}
+
+div#topper h3 a.delete {
+	color: #944225;
+}
+
+div#content {
+	margin-top: 1em;
+	margin-left:30px;
+	min-height: 12em;
+	padding: 0 20px;
+}
+
+.hide,.tempHide {
+	display:none;
+}
+
+.show {
+	display:block;
+}
+
+div.controls {
+	float:right;
+}
+
+label {
+	display: block;
+	margin-top: 12px;
+	margin-bottom: 6px;
+}
+
+input.long {
+	width: 50%;
+}
+
+#itemContent p {
+	margin: 20px 0;
+}
+
+textarea[name="description"] {
+	width: 40em;
+	height: 10em;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+ul.items {
+	margin: 20px 0;
+}
+
+ul.items li {
+	margin-top: 8px;
+	list-style: disc;
+}
+
