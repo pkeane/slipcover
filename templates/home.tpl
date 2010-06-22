@@ -20,9 +20,18 @@
 		</p>
 	</form>
 </div>
-<ul class="items">
-	{foreach item=title key=key from=$docs}
-	<li><a href="item/{$key}">{$title}</a></li>
+<dl class="docs">
+	{foreach item=set key=type from=$docs}
+	<dt>{$type}</dt>
+	<dd>
+	<ul>
+	{foreach item=title key=key from=$set}
+	<li>
+	<a href="item/{$key}">{$title}</a>
+	</li>
 	{/foreach}
-</ul>
+	</ul
+	</dd>
+	{/foreach}
+</dl>
 {/block}

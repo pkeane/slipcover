@@ -80,6 +80,12 @@ class CouchDB_Document {
 		$json_data = CouchDB::encode_json($this->data);
 		return $this->db->send('/','post',$json_data);
 	}
+
+	public function update()
+	{
+		$json_data = CouchDB::encode_json($this->data);
+		return $this->db->send($this->_id,'put',$json_data);
+	}
 }
 
 

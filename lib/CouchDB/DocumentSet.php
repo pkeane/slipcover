@@ -12,13 +12,17 @@ class CouchDB_DocumentSet
 	public function listByTitle($type_filter = '')
 	{
 		//add type filter !!!!!!!!!!!!!!
-		$map = "function(doc) { emit(doc.title,null); }";
+		$map = "function(doc) { emit(doc.title,doc.type); }";
 		$view = '{"map":"'.$map.'"}';
 		$view_result = $this->db->send('/_temp_view', 'post', $view);
 		$docs = array();
 		foreach ($view_result->getBody(true)->rows as $doc) {
-			$docs[$doc->id] = $doc->key;
+			if (!isset($docs[$doc->value])) {
+				$docs[$doc->value] = array();
+			}
+			$docs[$doc->value][$doc->id] = $doc->key;
 		}
+		ksort($docs);
 		return $docs;
 	}
 }

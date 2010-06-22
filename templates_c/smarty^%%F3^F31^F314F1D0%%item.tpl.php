@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.20, created on 2010-06-20 23:27:37
+<?php /* Smarty version 2.6.20, created on 2010-06-22 11:15:24
          compiled from item.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'extends', 'item.tpl', 1, false),array('block', 'block', 'item.tpl', 3, false),array('modifier', 'markdown', 'item.tpl', 6, false),)), $this); ?>
@@ -12,6 +12,8 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'extends', '
 )</h2>
 	<p><?php echo ((is_array($_tmp=$this->_tpl_vars['item']->description)) ? $this->_run_mod_handler('markdown', true, $_tmp) : smarty_modifier_markdown($_tmp)); ?>
 </p>
+	<a href="item/<?php echo $this->_tpl_vars['item']->_id; ?>
+/edit" class="modify">[edit]</a>
 	<a href="item/<?php echo $this->_tpl_vars['item']->_id; ?>
 " class="delete">[delete]</a>
 </div>
