@@ -92,6 +92,9 @@ a.current { color: #00c; font-weight: bold;}
 .modify {color: #00c;}
 a.modify {color: #00c; font-size: .8em;}
 
+.attach {color: #060;}
+a.attach {color: #060; font-size: .8em;}
+
 div#topper {
 	/*
 	border-bottom: 1px solid #554b44;
