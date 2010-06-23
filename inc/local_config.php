@@ -1,6 +1,6 @@
 <?php
 
-$conf['db']['name'] = 'php_app';
+$conf['db']['name'] = 'slipcover';
 $conf['db']['host'] = 'localhost';
 $conf['db']['port'] = '5984';
 $conf['db']['user'] = '';
