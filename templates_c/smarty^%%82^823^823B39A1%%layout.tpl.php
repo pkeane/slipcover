@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.20, created on 2010-06-20 23:27:29
+<?php /* Smarty version 2.6.20, created on 2010-06-23 22:25:18
          compiled from layout.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('block', 'block', 'layout.tpl', 6, false),)), $this); ?>
@@ -29,7 +29,7 @@ smarty_core_load_plugins(array('plugins' => array(array('block', 'block', 'layou
 				<h1><a href="home">CouchDase</a></h1>
 				<h3 id="topMenu">
 					<a href="home">Home</a> |
-					<a href="home">Lists</a> 
+					<a href="design">New Design Doc</a> 
 				</h3>
 
 				<div class="spacer"></div>

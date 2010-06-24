@@ -2,7 +2,6 @@
 
 class Dase_Handler_Home extends Dase_Handler
 {
-	protected $couch;
 
 	public $resource_map = array(
 		'/' => 'home',

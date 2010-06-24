@@ -75,8 +75,18 @@ class CouchDB_Document {
         return $msg;
     }
 
+    public function create($id)
+    {
+        $json_data = CouchDB::encode_json($this->data);
+        return $this->db->send('/','post',$json_data);
+    }
+
     public function save()
     {
+        if ($this->_id) {
+            //new entity put
+            return $this->update();
+        }
         $json_data = CouchDB::encode_json($this->data);
         return $this->db->send('/','post',$json_data);
     }
@@ -84,6 +94,9 @@ class CouchDB_Document {
     public function update()
     {
         $json_data = CouchDB::encode_json($this->data);
+        if ($this->_rev) {
+            return $this->db->send($this->_id.'?rev='.$this->_rev,'put',$json_data);
+        }
         return $this->db->send($this->_id,'put',$json_data);
     }
 

@@ -24,7 +24,7 @@
 				<h1><a href="home">CouchDase</a></h1>
 				<h3 id="topMenu">
 					<a href="home">Home</a> |
-					<a href="home">Lists</a> 
+					<a href="design">New Design Doc</a> 
 				</h3>
 
 				<div class="spacer"></div>

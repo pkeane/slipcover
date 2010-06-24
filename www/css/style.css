@@ -153,11 +153,11 @@ input.long {
 	margin: 20px 0;
 }
 
-textarea[name="description"] {
-	width: 40em;
-	height: 10em;
+/* textarea[name="description"] { */
+textarea {
+	width: 50em;
+	height: 20em;
 	margin-bottom: 30px;
-	font-size: 20px;
 }
 
 ul.items {

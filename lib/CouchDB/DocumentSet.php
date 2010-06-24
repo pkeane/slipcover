@@ -9,6 +9,15 @@ class CouchDB_DocumentSet
         $this->db = $db;
     }
 
+    public function listDesignDocs()
+    {
+        $result = $this->db->send('/_all_docs?startkey="_design/"&endkey="_design0"');
+        $data = $result->getBody(true);
+        if (isset($data->rows)) {
+            return $data->rows;
+        }
+    }
+
     public function listByTitle($type_filter = '')
     {
         //add type filter !!!!!!!!!!!!!!
